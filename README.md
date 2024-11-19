@@ -3,7 +3,7 @@
 # 简介(Introduction)
 
 GitHub监控和信息收集工具，支持监控和收集CVE、免杀、漏洞利用等内置关键字和自定义关键字。支持钉钉、Server酱和Telegram推送，过滤敏感词，查找包含关键字的所有仓库并输出到FEGC.xlsx文件。默认关键字列表有限，可通过文件指定关键字和敏感词，由于GitHub API速率限制，目前仅实现单线程。
-![image]([./images/Structure.png](https://github.com/adminlove520/InfoMonitor/blob/main/images/Structure.png))
+![image](./images/Structure.png)
 
 默认关键字列表(Default Keyword List)：
 ```
@@ -50,4 +50,4 @@ optional arguments:
 - 根据内置关键词监控存储库，监控阈值为3小时，每天17:00推送24小时内的新存储库，同时启用实时推送：`python3 FireEyeGoldCrystal.py -m -mT 180 -r -d 17:00`
 
 ***结果***
-![image]([./images/result0.png](https://github.com/adminlove520/InfoMonitor/blob/main/images/result0.png))
+![image](./images/result0.png)
