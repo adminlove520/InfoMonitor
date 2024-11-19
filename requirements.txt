@@ -1,4 +1,6 @@
 requests
+schedule
+bs4
 json
 openpyxl
 argparse

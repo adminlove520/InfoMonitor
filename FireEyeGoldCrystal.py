@@ -15,9 +15,9 @@ import random
 result=[]
 
 # 钉钉机器人的加签密钥
-secret = 'SECe560d776ac51b242388fb4af4eb9b479c76588482eeda173014971c0604c9360'
+secret = 'SECcc3da4f218d34da7fdc4cb778692087a7660b911120c5033b670db26a505fae8'
 # 钉钉机器人的Webhook
-webhook = 'https://oapi.dingtalk.com/robot/send?access_token=447fbd621c5c833eeee50b17e3ba750589090404291e493eab1256ee5b64d8cb'
+webhook = 'https://oapi.dingtalk.com/robot/send?access_token=18dba005ec58f2a60dae62be24630b2d4108f7f8120ddb576cdc91904bbfc5ff'
 # 企业微信webhook
 wxwork_url=''
 
@@ -80,7 +80,7 @@ def DingDing(msg):
     url=webhook+'&timestamp='+timestamp+'&sign='+sign
     #json={"msgtype": "text","text": {"content": msg},"isAtAll": True}
     msglist=[{
-                "title": "GitHub情报"+str(len(msg))+"条",
+                "title": "东方隐侠·GitHub情报"+str(len(msg))+"条",
                 "picURL": get_random_bing_wallpaper()
             }]
     for i in range(len(msg)):
@@ -278,7 +278,7 @@ def Telegram(msg):
     bot.send_message(chat_id=group_id, text=msg)
 
 procdesc="FireEyeGoldCrystal 是一个GitHub监控和信息收集工具，支持钉钉、Server酱和Telegram推送，过滤敏感词，查找包含关键字的所有仓库并输出到FEGC.xlsx文件     --By NHPT"
-parser=argparse.ArgumentParser(description=procdesc,epilog="GitHub:https://github.com/nhpt")
+parser=argparse.ArgumentParser(description=procdesc,epilog="GitHub:https://github.com/adminlove520")
 
 group = parser.add_mutually_exclusive_group(required=True)
 group.add_argument('-m',action='store_true',help='监控模式，定时推送')
@@ -306,9 +306,9 @@ head = {
     "User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36"
 }
 # 关键字列表
-SearchList=["CVE-"+str(current_year) ,"CVE-"+str(current_year-1),"CVE-"+str(current_year-2), "cve-2024" , "免杀" , "poc/exp" ,
- "命令执行/RCE", "漏洞利用/工具", "漏洞扫描/工具" , "信息收集", "溯源反制" , "内网横向/渗透" , "Burp插件" ,
-  "运维&甲方&防守方工具" , "信息泄露/工具" , "渗透测试字典/Wordlists" , "漏洞集合"]
+SearchList=["CVE-"+str(current_year) ,"CVE-"+str(current_year-1),"CVE-"+str(current_year-2), "cve-2024" , "免杀" , "内网渗透" ,
+ "应急响应", "信息收集", "漏洞" , "渗透", "cobaltstrike" , "rce" , "Burp插件" ,
+  "综合利用工具" , "绕过" , "红队" , "漏洞集合"]
 
 # 敏感词列表
 SensitiveWords=[]
