@@ -1,4 +1,4 @@
-cve-2024
+CobaltStrike
 免杀
 poc
 命令执行

@@ -306,7 +306,7 @@ head = {
     "User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36"
 }
 # 关键字列表
-SearchList=["CVE-"+str(current_year) ,"CVE-"+str(current_year-1),"CVE-"+str(current_year-2), "cve-2024" , "免杀" , "内网渗透" ,
+SearchList=["CVE-"+str(current_year) ,"CVE-"+str(current_year-1),"CVE-"+str(current_year-2), "CobaltStrike" , "免杀" , "内网渗透" ,
  "应急响应", "信息收集", "漏洞" , "渗透", "cobaltstrike" , "rce" , "Burp插件" ,
   "综合利用工具" , "绕过" , "红队" , "漏洞集合"]
 
