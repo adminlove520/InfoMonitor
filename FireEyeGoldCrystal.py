@@ -333,7 +333,7 @@ if args.c:
 if args.m:
     schedule.every(mt).minutes.do(GetNewSearch)
     if args.d:
-        schedule.every().day.at(args.d).do(WXWork,result).tag('wxwork')
+        #schedule.every().day.at(args.d).do(WXWork,result).tag('wxwork')
         schedule.every().day.at(args.d).do(DingDing,result).tag('dingding')
         schedule.every().day.at(args.d).do(clearResult).tag('clearflag')
     while 1:
